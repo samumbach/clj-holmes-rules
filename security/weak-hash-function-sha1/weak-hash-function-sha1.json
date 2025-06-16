@@ -1,0 +1,17 @@
+[
+  {
+    "filename": "security/weak-hash-function-sha1/weak_hash_function_sha1.clj",
+    "findings": [
+      {
+        "row": 6,
+        "col": 12,
+        "end-row": 6,
+        "end-col": 46,
+        "parent": "weak-hash-function-sha1/hash-vulnerable",
+        "code": "(MessageDigest/getInstance \"SHA1\")"
+      }
+    ],
+    "name": "Usage of weak hash function sha1",
+    "message": "Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is therefore not suitable as a cryptographic signature"
+  }
+]

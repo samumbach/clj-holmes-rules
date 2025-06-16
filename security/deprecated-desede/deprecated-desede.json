@@ -1,0 +1,17 @@
+[
+  {
+    "filename": "security/deprecated-desede/deprecated_desede.clj",
+    "findings": [
+      {
+        "row": 7,
+        "col": 16,
+        "end-row": 7,
+        "end-col": 59,
+        "parent": "deprecated-desede/encrypt-vulnerable",
+        "code": "(Cipher/getInstance \"DESede/CBC/NoPadding\")"
+      }
+    ],
+    "name": "Inadequate Encryption Strength",
+    "message": "Triple DES (3DES or DESede) is considered deprecated. AES is the recommended cipher"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "filename": "security/weak-hash-function-md5/weak_hash_function_md5.clj",
+    "findings": [
+      {
+        "row": 6,
+        "col": 12,
+        "end-row": 6,
+        "end-col": 45,
+        "parent": "weak-hash-function-md5/hash-vulnerable",
+        "code": "(MessageDigest/getInstance \"MD5\")"
+      }
+    ],
+    "name": "Usage of weak hash function md5",
+    "message": "Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature."
+  }
+]
