@@ -8,7 +8,7 @@
         "end-row": 6,
         "end-col": 45,
         "parent": "weak-hash-function-md5/hash-vulnerable",
-        "code": "(MessageDigest/getInstance \"MD5\")"
+        "code": "(MessageDigest/getInstance \"md5\")"
       }
     ],
     "name": "Usage of weak hash function md5",

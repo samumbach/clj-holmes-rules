@@ -8,7 +8,7 @@
         "end-row": 5,
         "end-col": 56,
         "parent": "vulnerable.clj/encrypt-vulnerable",
-        "code": "(Cipher/getInstance \"RSA/ECB/PKCS1Padding\")"
+        "code": "(Cipher/getInstance \"RSA/ecb/PKCS1Padding\")"
       }
     ],
     "name": "ECB mode of operation",

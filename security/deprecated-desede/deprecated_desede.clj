@@ -4,7 +4,7 @@
            (javax.crypto.spec SecretKeySpec IvParameterSpec)))
 
 (defn encrypt-vulnerable [data key iv]
-  (let [cipher (Cipher/getInstance "DESede/CBC/NoPadding")]
+  (let [cipher (Cipher/getInstance "desede/CBC/NoPadding")]
     (.init cipher Cipher/ENCRYPT_MODE (SecretKeySpec. key "DESede") (IvParameterSpec. iv))
     (.encodeToString (Base64/getEncoder) (.doFinal cipher data))))
 

@@ -8,7 +8,7 @@
         "end-row": 4,
         "end-col": 44,
         "parent": "clojure-weak-ssl-context/context",
-        "code": "(SSLContext/getInstance \"SSL\")"
+        "code": "(SSLContext/getInstance \"ssl\")"
       }
     ],
     "name": "Insecure SSL Context",

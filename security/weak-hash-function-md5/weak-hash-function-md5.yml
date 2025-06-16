@@ -8,9 +8,11 @@
       - security
       - vulnerability
   patterns-either:
-    - pattern: (MessageDigest/getInstance "MD5")
+    - pattern: "(MessageDigest/getInstance #\"(?i)MD5\")"
+      interpret-regex?: true
     - pattern: (MessageDigest/getInstance MessageDigestAlgorithms/MD5)
     - pattern: (MessageDigest/getInstance org.apache.commons.codec.digest.MessageDigestAlgorithms/MD5)
-    - pattern: (java.security.MessageDigest/getInstance "MD5")
+    - pattern: "(java.security.MessageDigest/getInstance #\"(?i)MD5\")"
+      interpret-regex?: true
     - pattern: (java.security.MessageDigest/getInstance MessageDigestAlgorithms/MD5)
     - pattern: (java.security.MessageDigest/getInstance org.apache.commons.codec.digest.MessageDigestAlgorithms/MD5)

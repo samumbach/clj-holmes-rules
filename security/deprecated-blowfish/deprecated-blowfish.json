@@ -8,7 +8,7 @@
         "end-row": 5,
         "end-col": 51,
         "parent": "deprecated-blowfish/vulnerable",
-        "code": "(Cipher/getInstance \"Blowfish/CBC/PKCS5Padding\")"
+        "code": "(Cipher/getInstance \"blowfish/CBC/PKCS5Padding\")"
       }
     ],
     "name": "Inadequate Encryption Strength",

@@ -3,7 +3,7 @@
            (org.apache.commons.codec.binary Hex)))
 
 (defn hash-vulnerable [s]
-  (let [md (MessageDigest/getInstance "MD5")]
+  (let [md (MessageDigest/getInstance "md5")]
     (.update md (.getBytes s))
     (Hex/encodeHexString (.digest md))))
 

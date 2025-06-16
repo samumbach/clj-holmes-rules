@@ -8,7 +8,7 @@
         "end-row": 6,
         "end-col": 46,
         "parent": "weak-hash-function-sha1/hash-vulnerable",
-        "code": "(MessageDigest/getInstance \"SHA1\")"
+        "code": "(MessageDigest/getInstance \"sha1\")"
       }
     ],
     "name": "Usage of weak hash function sha1",

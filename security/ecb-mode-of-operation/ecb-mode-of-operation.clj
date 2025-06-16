@@ -2,7 +2,7 @@
   (:import [javax.crypto Cipher]))
 
 (defn encrypt-vulnerable [data public-key]
-  (let [rsa (Cipher/getInstance "RSA/ECB/PKCS1Padding")]
+  (let [rsa (Cipher/getInstance "RSA/ecb/PKCS1Padding")]
     (.init rsa Cipher/ENCRYPT_MODE public-key)
     (.doFinal rsa data)))
 
