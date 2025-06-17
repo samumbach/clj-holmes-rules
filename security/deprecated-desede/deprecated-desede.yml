@@ -8,7 +8,7 @@
       - security
       - vulnerability
   patterns-either:
-    - pattern: "(Cipher/getInstance #\"(?i)DESede(?:/.*/.*)?\")"
+    - pattern: "(Cipher/getInstance #\"(?i)(?:DESede|TripleDES|TDEA)(?:WRAP|RFC3211WRAP|RFC3217WRAP)?(?:/.*/.*)?\")"
       interpret-regex?: true
-    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)DESede(?:/.*/.*)?\")"
+    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)(?:DESede|TripleDES|TDEA)(?:WRAP|RFC3211WRAP|RFC3217WRAP)?(?:/.*/.*)?\")"
       interpret-regex?: true

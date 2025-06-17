@@ -9,7 +9,7 @@
       - certificate
       - security
   patterns-either:
-    - pattern: "(SSLContext/getInstance #\"(?i)SSL\")"
+    - pattern: "(SSLContext/getInstance #\"(?i)SSL|TLS\")"
       interpret-regex?: true
-    - pattern: "(javax.net.ssl.SSLContext/getInstance #\"(?i)SSL\")"
+    - pattern: "(javax.net.ssl.SSLContext/getInstance #\"(?i)SSL|TLS\")"
       interpret-regex?: true

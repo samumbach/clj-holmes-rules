@@ -8,7 +8,7 @@
       - security
       - vulnerability
   patterns-either:
-    - pattern: "(MessageDigest/getInstance #\"(?i)MD5\")"
+    - pattern: "(MessageDigest/getInstance #\"(?i)MD5\")" # also "1.2.840.113549.2.5" and "OID.1.2.840.113549.2.5"
       interpret-regex?: true
     - pattern: (MessageDigest/getInstance MessageDigestAlgorithms/MD5)
     - pattern: (MessageDigest/getInstance org.apache.commons.codec.digest.MessageDigestAlgorithms/MD5)
