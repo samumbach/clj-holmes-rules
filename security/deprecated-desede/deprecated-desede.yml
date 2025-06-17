@@ -8,7 +8,7 @@
       - security
       - vulnerability
   patterns-either:
-    - pattern: "(Cipher/getInstance #\"(?i)DESede/CBC/NoPadding\")"
+    - pattern: "(Cipher/getInstance #\"(?i)DESede(?:/.*/.*)?\")"
       interpret-regex?: true
-    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)DESede/CBC/NoPadding\")"
+    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)DESede(?:/.*/.*)?\")"
       interpret-regex?: true

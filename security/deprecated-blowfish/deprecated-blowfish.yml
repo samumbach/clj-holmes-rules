@@ -8,7 +8,7 @@
       - security
       - vulnerability
   patterns-either:
-    - pattern: "(Cipher/getInstance #\"(?i)Blowfish/.*/.*\")"
+    - pattern: "(Cipher/getInstance #\"(?i)Blowfish(?:/.*/.*)?\")"
       interpret-regex?: true
-    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)Blowfish/.*/.*\")"
+    - pattern: "(javax.crypto.Cipher/getInstance #\"(?i)Blowfish(?:/.*/.*)?\")"
       interpret-regex?: true
