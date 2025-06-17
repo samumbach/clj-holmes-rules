@@ -2,7 +2,7 @@
   (:import [javax.crypto Cipher]))
 
 (defn vulnerable []
-  (Cipher/getInstance "blowfish/CBC/PKCS5Padding"))
+  (Cipher/getInstance "blowfish"))
 
 (defn not-vulnerable []
   (Cipher/getInstance "RSA/CBC/PKCS1Padding"))

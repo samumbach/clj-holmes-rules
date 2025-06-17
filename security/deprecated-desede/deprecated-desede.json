@@ -6,9 +6,9 @@
         "row": 7,
         "col": 16,
         "end-row": 7,
-        "end-col": 59,
+        "end-col": 45,
         "parent": "deprecated-desede/encrypt-vulnerable",
-        "code": "(Cipher/getInstance \"desede/CBC/NoPadding\")"
+        "code": "(Cipher/getInstance \"desede\")"
       }
     ],
     "name": "Inadequate Encryption Strength",
