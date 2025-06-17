@@ -3,7 +3,7 @@
            (org.apache.commons.codec.binary Hex)))
 
 (defn hash-vulnerable [s]
-  (let [md (MessageDigest/getInstance "sha1")]
+  (let [md (MessageDigest/getInstance "sha")]
     (.update md (.getBytes s))
     (Hex/encodeHexString (.digest md))))
 

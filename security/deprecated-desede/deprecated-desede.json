@@ -6,9 +6,9 @@
         "row": 7,
         "col": 16,
         "end-row": 7,
-        "end-col": 45,
+        "end-col": 56,
         "parent": "deprecated-desede/encrypt-vulnerable",
-        "code": "(Cipher/getInstance \"desede\")"
+        "code": "(Cipher/getInstance \"DESEDERFC3211WRAP\")"
       }
     ],
     "name": "Inadequate Encryption Strength",
